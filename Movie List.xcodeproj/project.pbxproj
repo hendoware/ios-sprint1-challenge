@@ -19,6 +19,7 @@
 		7B1D66DB2167B8BA0094907C /* Movie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B1D66DA2167B8BA0094907C /* Movie.storyboard */; };
 		7B1D66DD2167BB880094907C /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D66DC2167BB880094907C /* MovieController.swift */; };
 		7B1D66DF2167BC7F0094907C /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B1D66DE2167BC7F0094907C /* Results.storyboard */; };
+		7B1D66E12167C7580094907C /* ResultsViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D66E02167C7580094907C /* ResultsViewCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		7B1D66DA2167B8BA0094907C /* Movie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Movie.storyboard; sourceTree = "<group>"; };
 		7B1D66DC2167BB880094907C /* MovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
 		7B1D66DE2167BC7F0094907C /* Results.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
+		7B1D66E02167C7580094907C /* ResultsViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewCellDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				7B1D66D42167B5F30094907C /* ResultsTabBarViewController.swift */,
 				7B1D66D62167B70F0094907C /* MovieViewController.swift */,
 				7B1D66D82167B7B20094907C /* ResultsTableViewController.swift */,
+				7B1D66E02167C7580094907C /* ResultsViewCellDelegate.swift */,
 				467E199320F5165900E7FF73 /* Assets.xcassets */,
 				467E199820F5165900E7FF73 /* Info.plist */,
 				467E199020F5165800E7FF73 /* Main.storyboard */,
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1D66E12167C7580094907C /* ResultsViewCellDelegate.swift in Sources */,
 				7B1D66D52167B5F30094907C /* ResultsTabBarViewController.swift in Sources */,
 				7B1D66D92167B7B20094907C /* ResultsTableViewController.swift in Sources */,
 				7B1D66CF2167B4A40094907C /* MovieControllerProtocol.swift in Sources */,
