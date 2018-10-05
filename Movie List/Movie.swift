@@ -1,5 +1,5 @@
 import Foundation
-
+//this is the newest 1:58pm
 class Movie {
     var name: String
     var seen: String //change to bool
