@@ -4,6 +4,9 @@ import UIKit
 class ResultsTableViewController: UITableViewController, MovieControllerProtocol {
     var movieController: MovieController?
     
+    //this outlet breaking stuff....
+    @IBOutlet weak var button: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -25,6 +28,29 @@ class ResultsTableViewController: UITableViewController, MovieControllerProtocol
         
         return cell
     }
+    
+    //this is supposed to toggle the seen button...
+//    func tappedSeenButton(on cell: ResultsTableViewController) {
+//        guard let indexPath = tableView?.indexPath(for: cell)
+//            else {fatalError("Non-existent cell")}
+//
+//        Movie.movies[indexPath.row].isSeen.toggle()
+//        cell.button.alpha = Movie.movies[indexPath.row].isSeen ? 1.0 : 0.33 //change this to change text...
+//    }
+    
+    
+    //this is supposed to swipe to delete
+//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//        // Only handle deletions
+//        guard editingStyle == .delete else { return }
+//
+//        // Update model then refresh view
+//
+//        if (editingStyle == .delete){
+//            cell.movies.remove(at: indexPath.row) //this line causing issues
+//            tableView.deleteRows(at: [indexPath], with: .fade)
+//        }
+//    }
     
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()

@@ -12,7 +12,7 @@ class MovieViewController: UIViewController, MovieControllerProtocol {
     
     @IBAction func submitButton(_ sender: Any) {
         if let name = name.text, let seen = seen.text {
-            movieController?.create(name: name, seen: seen)
+            movieController?.create(name: name, seen: seen, isSeen: false)
         }
     }
     
