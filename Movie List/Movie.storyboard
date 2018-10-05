@@ -37,22 +37,13 @@
                                     <action selector="submitButton:" destination="qgr-pE-1fz" eventType="touchUpInside" id="Khk-rW-kqk"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seen temp" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MGL-Dr-BiL">
-                                <rect key="frame" x="139" y="279" width="97" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Zq4-Tx-JEf" firstAttribute="centerX" secondItem="MGL-Dr-BiL" secondAttribute="centerX" id="777-FP-sSE"/>
-                            <constraint firstItem="MGL-Dr-BiL" firstAttribute="top" secondItem="cHc-U4-zbg" secondAttribute="bottom" constant="73" id="7NG-u9-Mui"/>
                             <constraint firstItem="Zq4-Tx-JEf" firstAttribute="top" secondItem="GdS-o1-fEv" secondAttribute="top" constant="126" id="POU-NY-s4P"/>
                             <constraint firstItem="cHc-U4-zbg" firstAttribute="top" secondItem="Zq4-Tx-JEf" secondAttribute="bottom" constant="20" id="YDj-Yu-PKL"/>
                             <constraint firstItem="Zq4-Tx-JEf" firstAttribute="top" secondItem="9Cr-ps-aeD" secondAttribute="bottom" constant="19" id="gJ1-Jm-bgk"/>
                             <constraint firstItem="Zq4-Tx-JEf" firstAttribute="centerX" secondItem="cHc-U4-zbg" secondAttribute="centerX" id="ifG-Ya-W8E"/>
-                            <constraint firstItem="MGL-Dr-BiL" firstAttribute="leading" secondItem="Mf2-wA-jfE" secondAttribute="leading" constant="139" id="qJ3-ku-0MS"/>
                             <constraint firstItem="Zq4-Tx-JEf" firstAttribute="leading" secondItem="Mf2-wA-jfE" secondAttribute="leading" constant="8" id="qoy-pn-nYk"/>
                             <constraint firstItem="Mf2-wA-jfE" firstAttribute="trailing" secondItem="Zq4-Tx-JEf" secondAttribute="trailing" constant="8" id="wHr-Fi-pyP"/>
                             <constraint firstItem="Zq4-Tx-JEf" firstAttribute="centerX" secondItem="9Cr-ps-aeD" secondAttribute="centerX" id="wY5-fY-C9U"/>
@@ -63,7 +54,6 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="name" destination="Zq4-Tx-JEf" id="P7P-FT-ncA"/>
-                        <outlet property="seen" destination="MGL-Dr-BiL" id="2R2-rq-Zfq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfK-KR-zY4" userLabel="First Responder" sceneMemberID="firstResponder"/>

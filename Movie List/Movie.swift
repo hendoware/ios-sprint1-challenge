@@ -13,6 +13,4 @@ class Movie {
     }
     
     
-    //this is for the delete?
-     //static let shared = Movie(name: name, seen: seen, isSeen: isSeen)
 }

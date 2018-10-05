@@ -4,8 +4,6 @@ import UIKit
 class ResultsTableViewController: UITableViewController, MovieControllerProtocol {
     var movieController: MovieController?
     
-    //this outlet breaking stuff....
-    @IBOutlet weak var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +19,13 @@ class ResultsTableViewController: UITableViewController, MovieControllerProtocol
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let movie = movieController?.movies[indexPath.row]
-        cell.textLabel?.text = movie?.name
-        //cell.detailTextLabel?.text = movie?.seen //fix this for bool
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ResultsTableViewCell,
+            let movie = movieController?.movies[indexPath.row] else {return UITableViewCell()}
+        
+        cell.textLabel?.text = movie.name
+        //cell.detailTextLabel?.text = movieController?.movies[indexPath.row].isSeen ? "Seen" : "Not Seen"
+        let textSeen = "SEEEEEEN"
+        cell.detailTextLabel?.text = textSeen
         
         return cell
     }
@@ -35,7 +36,8 @@ class ResultsTableViewController: UITableViewController, MovieControllerProtocol
 //            else {fatalError("Non-existent cell")}
 //
 //        Movie.movies[indexPath.row].isSeen.toggle()
-//        cell.button.alpha = Movie.movies[indexPath.row].isSeen ? 1.0 : 0.33 //change this to change text...
+//        //cell.button.alpha = Movie.movies[indexPath.row].isSeen ? 1.0 : 0.33 //change this to change text...
+//    cell.button.text = Movie.movies[indexPath.row].isSeen ? "Seen" : "Not Seen"
 //    }
     
     
@@ -49,7 +51,6 @@ class ResultsTableViewController: UITableViewController, MovieControllerProtocol
         if (editingStyle == .delete){
             guard (movieController?.movies[indexPath.row]) != nil else {return}
             movieController?.movies.remove(at: indexPath.row) //this line causing issues
-            //movieController?.deleteMovie(movie: movie) //no work
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
