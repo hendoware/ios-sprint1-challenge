@@ -13,6 +13,7 @@
 		467E199720F5165900E7FF73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467E199520F5165900E7FF73 /* LaunchScreen.storyboard */; };
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		7B1D66CF2167B4A40094907C /* MovieControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D66CE2167B4A40094907C /* MovieControllerProtocol.swift */; };
 		7B1D66D12167B4E30094907C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D66D02167B4E30094907C /* Movie.swift */; };
 		7B1D66D52167B5F30094907C /* ResultsTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D66D42167B5F30094907C /* ResultsTabBarViewController.swift */; };
@@ -22,6 +23,8 @@
 		7B1D66DD2167BB880094907C /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D66DC2167BB880094907C /* MovieController.swift */; };
 		7B1D66DF2167BC7F0094907C /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B1D66DE2167BC7F0094907C /* Results.storyboard */; };
 		7B1D66E12167C7580094907C /* ResultsViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1D66E02167C7580094907C /* ResultsViewCellDelegate.swift */; };
+=======
+>>>>>>> parent of ef1da66... first commit
 =======
 >>>>>>> parent of ef1da66... first commit
 =======
@@ -37,6 +40,7 @@
 		467E199820F5165900E7FF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		7B1D66CE2167B4A40094907C /* MovieControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieControllerProtocol.swift; sourceTree = "<group>"; };
 		7B1D66D02167B4E30094907C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		7B1D66D42167B5F30094907C /* ResultsTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTabBarViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +50,8 @@
 		7B1D66DC2167BB880094907C /* MovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
 		7B1D66DE2167BC7F0094907C /* Results.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
 		7B1D66E02167C7580094907C /* ResultsViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewCellDelegate.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> parent of ef1da66... first commit
 =======
 >>>>>>> parent of ef1da66... first commit
 =======
@@ -85,6 +91,7 @@
 				467E198C20F5165800E7FF73 /* AppDelegate.swift */,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				7B1D66CE2167B4A40094907C /* MovieControllerProtocol.swift */,
 				7B1D66D02167B4E30094907C /* Movie.swift */,
 				7B1D66DC2167BB880094907C /* MovieController.swift */,
@@ -92,6 +99,8 @@
 				7B1D66D62167B70F0094907C /* MovieViewController.swift */,
 				7B1D66D82167B7B20094907C /* ResultsTableViewController.swift */,
 				7B1D66E02167C7580094907C /* ResultsViewCellDelegate.swift */,
+=======
+>>>>>>> parent of ef1da66... first commit
 =======
 >>>>>>> parent of ef1da66... first commit
 =======
@@ -177,11 +186,14 @@
 			files = (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				7B1D66E12167C7580094907C /* ResultsViewCellDelegate.swift in Sources */,
 				7B1D66D52167B5F30094907C /* ResultsTabBarViewController.swift in Sources */,
 				7B1D66D92167B7B20094907C /* ResultsTableViewController.swift in Sources */,
 				7B1D66CF2167B4A40094907C /* MovieControllerProtocol.swift in Sources */,
 				7B1D66DD2167BB880094907C /* MovieController.swift in Sources */,
+=======
+>>>>>>> parent of ef1da66... first commit
 =======
 >>>>>>> parent of ef1da66... first commit
 =======
