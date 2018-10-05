@@ -29,12 +29,6 @@ class ResultsTableViewController: UITableViewController, MovieControllerProtocol
         return cell
     }
     
-//    func updateViews() {
-//        guard let movie = movie else {return}
-//        name.text = movie.name
-//        movie.isSeen ?
-//    }
-    
     //this is supposed to toggle the seen button...
 //    func tappedSeenButton(on cell: ResultsTableViewController) {
 //        guard let indexPath = tableView?.indexPath(for: cell)
@@ -46,17 +40,19 @@ class ResultsTableViewController: UITableViewController, MovieControllerProtocol
     
     
     //this is supposed to swipe to delete
-//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        // Only handle deletions
-//        guard editingStyle == .delete else { return }
-//
-//        // Update model then refresh view
-//
-//        if (editingStyle == .delete){
-//            cell.movies.remove(at: indexPath.row) //this line causing issues
-//            tableView.deleteRows(at: [indexPath], with: .fade)
-//        }
-//    }
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        // Only handle deletions
+        guard editingStyle == .delete else { return }
+
+        // Update model then refresh view
+
+        if (editingStyle == .delete){
+            guard (movieController?.movies[indexPath.row]) != nil else {return}
+            movieController?.movies.remove(at: indexPath.row) //this line causing issues
+            //movieController?.deleteMovie(movie: movie) //no work
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
