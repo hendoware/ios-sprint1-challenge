@@ -1,14 +1,14 @@
 import Foundation
-//this is the newest 1:58pm
+
 class Movie {
     var name: String
-    var seen: String //change to bool
+    //var seen: String //change to bool
     var isSeen: Bool
    
 
-    init(name: String, seen: String, isSeen: Bool = false) { //add isSeen: Bool = false
+    init(name: String,  isSeen: Bool = false) { //add isSeen: Bool = false
         self.name = name
-        self.seen = seen
+        //self.seen = seen
         self.isSeen = isSeen
     }
     

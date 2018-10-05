@@ -24,10 +24,16 @@ class ResultsTableViewController: UITableViewController, MovieControllerProtocol
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let movie = movieController?.movies[indexPath.row]
         cell.textLabel?.text = movie?.name
-        cell.detailTextLabel?.text = movie?.seen //fix this for bool
+        //cell.detailTextLabel?.text = movie?.seen //fix this for bool
         
         return cell
     }
+    
+//    func updateViews() {
+//        guard let movie = movie else {return}
+//        name.text = movie.name
+//        movie.isSeen ?
+//    }
     
     //this is supposed to toggle the seen button...
 //    func tappedSeenButton(on cell: ResultsTableViewController) {

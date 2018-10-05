@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Results Table View Controller-->
+        <!--Movies-->
         <scene sceneID="iwx-qS-6TU">
             <objects>
                 <viewController id="dU3-Kq-iX1" customClass="ResultsTableViewController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,10 +53,15 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Movies" image="Clapboard" id="XtW-0v-U9z"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2vA-hn-FJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-102" y="-1"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Clapboard" width="28" height="28"/>
+    </resources>
 </document>

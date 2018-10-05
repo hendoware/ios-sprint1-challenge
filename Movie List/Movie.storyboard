@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Movie View Controller-->
+        <!--Add New Movies-->
         <scene sceneID="9aa-H8-SRA">
             <objects>
                 <viewController id="qgr-pE-1fz" customClass="MovieViewController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,6 +59,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mf2-wA-jfE"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Add New Movies" image="Plus" id="0Hg-e3-HPk"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="name" destination="Zq4-Tx-JEf" id="P7P-FT-ncA"/>
                         <outlet property="seen" destination="MGL-Dr-BiL" id="2R2-rq-Zfq"/>
@@ -69,4 +71,7 @@
             <point key="canvasLocation" x="432.80000000000001" y="-177.66116941529236"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Plus" width="28" height="28"/>
+    </resources>
 </document>
