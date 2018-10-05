@@ -1,22 +1,13 @@
 import Foundation
 
-class Movie: Comparable {
-    static func < (lhs: Movie, rhs: Movie) -> Bool {
-        return lhs.name < rhs.name
-    }
-//
-//    static func == (lhs: Movie, rhs: Movie) -> Bool {
-//        return lhs.name < rhs.name
-//    }
-    
+class Movie {
     var name: String
-    //var seen: String //change to bool
+    var seen: String //change to bool
     var isSeen: Bool
     
-    init(name: String, isSeen: Bool = false) {
+    init(name: String, seen: String, iSeen: Bool = false) { //add isSeen: Bool = false
         self.name = name
-        self.isSeen = isSeen
-        //self.seen = seen
+        self.seen = seen
+        self.isSeen = false
     }
-
 }
