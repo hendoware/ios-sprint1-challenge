@@ -4,6 +4,7 @@ import UIKit
 class ResultsTableViewController: UITableViewController, MovieControllerProtocol {
     var movieController: MovieController?
     
+    var movies = [Movie]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,22 +24,22 @@ class ResultsTableViewController: UITableViewController, MovieControllerProtocol
             let movie = movieController?.movies[indexPath.row] else {return UITableViewCell()}
         
         cell.textLabel?.text = movie.name
-        //cell.detailTextLabel?.text = movieController?.movies[indexPath.row].isSeen ? "Seen" : "Not Seen"
-        let textSeen = "SEEEEEEN"
-        cell.detailTextLabel?.text = textSeen
         
         return cell
     }
     
     //this is supposed to toggle the seen button...
-//    func tappedSeenButton(on cell: ResultsTableViewController) {
-//        guard let indexPath = tableView?.indexPath(for: cell)
-//            else {fatalError("Non-existent cell")}
-//
-//        Movie.movies[indexPath.row].isSeen.toggle()
-//        //cell.button.alpha = Movie.movies[indexPath.row].isSeen ? 1.0 : 0.33 //change this to change text...
-//    cell.button.text = Movie.movies[indexPath.row].isSeen ? "Seen" : "Not Seen"
-//    }
+    func tappedSeenButton(on cell: ResultsTableViewCell) {
+        guard let indexPath = cell.indexPath else {return}
+        movies[indexPath.row].isSeen.toggle()
+        
+        switch movies[indexPath.row].isSeen {
+        case true:
+            cell.seenButton.setTitle("Seen", for: .normal)
+        case false:
+            cell.seenButton.setTitle("Not Seen", for: .normal)
+        }
+    }
     
     
     //this is supposed to swipe to delete
@@ -50,13 +51,14 @@ class ResultsTableViewController: UITableViewController, MovieControllerProtocol
 
         if (editingStyle == .delete){
             guard (movieController?.movies[indexPath.row]) != nil else {return}
-            movieController?.movies.remove(at: indexPath.row) //this line causing issues
+            movieController?.movies.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
+        //tableView.dataSource = movieController! .....
     }
     
 }

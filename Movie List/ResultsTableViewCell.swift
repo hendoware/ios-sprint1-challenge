@@ -1,15 +1,20 @@
-//
-//  ResultsTableViewCell.swift
-//  Movie List
-//
-//  Created by Sean Hendrix on 10/5/18.
-//  Copyright © 2018 Lambda School. All rights reserved.
-//
-
 import UIKit
+
 
 class ResultsTableViewCell: UITableViewCell {
 
+    //should have an outlet for movie name label
+    var movieController: MovieController?
+    var indexPath: IndexPath?
+    
+    @IBOutlet weak var seenButton: UIButton!
+    
+    weak var delegate: ResultsTableViewCellDelegate?
+    
+    @IBAction func seenTapped(_ sender: Any) {
+        delegate?.tappedSeenButton(on: self)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +25,8 @@ class ResultsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
+    
 
 }

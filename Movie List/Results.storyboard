@@ -33,6 +33,9 @@
                                             <rect key="frame" x="265" y="0.0" width="102" height="41"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Not Seen"/>
+                                            <connections>
+                                                <action selector="seenTapped:" destination="oJY-A8-A0H" eventType="touchUpInside" id="2vS-gc-3qH"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHG-nL-nJQ">
                                             <rect key="frame" x="16" y="0.0" width="88" height="44"/>
@@ -43,11 +46,17 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="seenButton" destination="HYy-ZL-bA3" id="iuv-dx-oJU"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Movies" image="Clapboard" id="XtW-0v-U9z"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="P84-4l-9AD" id="Cl5-PE-YlN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2vA-hn-FJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
